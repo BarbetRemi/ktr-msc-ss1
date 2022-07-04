@@ -4,6 +4,7 @@ public abstract class Character implements Movable {
 
 	protected int life, agility, strength, wit;
 	protected String name, rpgClass;
+	protected Boolean isWeapSheathed = true;
 	
 	public Character(String pName) {
 		setName(pName);
@@ -16,6 +17,12 @@ public abstract class Character implements Movable {
 		setRPGClass("Character");
 		
 	}
+	
+	public void unSheathe() {
+		setIsWeapSheathed(false);
+		System.out.println("["+ getName() +"]: unsheathes his weapon.");
+	}
+	
 	@Override
 	public void moveRight() {
 		System.out.println("["+ getName() +"] moves right");
@@ -88,6 +95,14 @@ public abstract class Character implements Movable {
 
 	protected void setName(String name) {
 		this.name = name;
+	}
+
+	protected Boolean getIsWeapSheathed() {
+		return isWeapSheathed;
+	}
+
+	protected void setIsWeapSheathed(Boolean isWeapSheathed) {
+		this.isWeapSheathed = isWeapSheathed;
 	}
 
 	
