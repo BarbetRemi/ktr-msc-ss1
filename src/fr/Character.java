@@ -18,7 +18,7 @@ public abstract class Character implements Movable {
 		
 	}
 	
-	public void unSheathe() {
+	private void unSheathe() {
 		setIsWeapSheathed(false);
 		System.out.println("["+ getName() +"]: unsheathes his weapon.");
 	}
