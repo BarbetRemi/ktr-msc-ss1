@@ -7,12 +7,14 @@ public abstract class Character {
 	
 	public Character(String pName) {
 		setName(pName);
+		
 		setLife(50);
 		setAgility(2);
 		setStrength(2);
 		setWit(2);
 		
 		setRPGClass("Character");
+		
 	}
 	
 	protected void setRPGClass(String rpgClass) {
@@ -23,8 +25,8 @@ public abstract class Character {
 		return rpgClass;
 	}
 	
-	protected void attack(String string) {
-		System.out.println("Rrrrrrrrr...");
+	protected void attack(String pWeapon) {
+		System.out.println("["+ getName() +"]: Rrrrrrrrr...");
 	}
 	
 

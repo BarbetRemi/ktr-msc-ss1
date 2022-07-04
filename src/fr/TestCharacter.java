@@ -1,6 +1,6 @@
 package fr;
 
-public class TestCharacter extends Character {
+public class TestCharacter extends Warrior {
 
 	public TestCharacter(String pName) {
 
